@@ -9,27 +9,20 @@
 </head>
 
 <body ng-app="game-app">
-<div class="game-container">
+<div class="game-container" ng-controller="game-controller">
     <!--Player -->
     <div class="player-container">
-        <div class="player-one player">Player 1</div>
-        <div class="player-two player">Player 2</div>
+        <div class="player-one player" ng-class="{'selected' : game.mode.xPlayerTurn}">Player 1</div>
+        <div class="player-two player" ng-class="{'selected' : !game.mode.xPlayerTurn}">Player 2</div>
     </div>
 
     <!--Game board-->
     <div class="board-container">
         <!--first row-->
-        <div class="cell-11 cell">X</div>
-        <div class="cell-12 cell ">O</div>
-        <div class="cell-13 cell">X</div>
-        <!--second row-->
-        <div class="cell-21 cell">0</div>
-        <div class="cell-22 cell">X</div>
-        <div class="cell-23 cell">0</div>
-        <!--third row-->
-        <div class="cell-31 cell">0</div>
-        <div class="cell-32 cell">X</div>
-        <div class="cell-33 cell">0</div>
+        <div class="cell-11 cell"
+             ng-repeat="cell in game.board.cells">
+
+        </div>
     </div>
     <!--Message -->
     <div class="message-container">

@@ -24,8 +24,11 @@ $padding: 10px;
     text-align: center;
     padding: $padding;
 
-    border: 1px solid $color-border;
+    border: 1px solid transparent;
     background-color: $color-bg;
+  }
+  .player.selected{
+    border: 1px solid $color-border;
   }
 }
 
