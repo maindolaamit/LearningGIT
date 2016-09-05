@@ -12,9 +12,13 @@ app.controller("game-controller", function ($scope) {
     var game = {
         mode: {
             running: true,
-            xPlayerTurn: false
+            xPlayerTurn: true
         },
         board:{
+            select: function(cell){
+                cell.value = game.mode.xPlayerTurn ? 'X' : 'O';
+                game.mode.xPlayerTurn = !game.mode.xPlayerTurn;
+            },
             cells: [
                 createCell(), createCell(), createCell(),
                 createCell(), createCell(), createCell(),

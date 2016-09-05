@@ -19,10 +19,12 @@
     <!--Game board-->
     <div class="board-container">
         <!--first row-->
-        <div class="cell-11 cell"
-             ng-repeat="cell in game.board.cells">
+        <div class="cell"
+             ng-repeat="cell in game.board.cells"
+             ng-click="!cell.value ? game.board.select(cell) : ''">
             {{cell.value ? cell.value : "" }}
         </div>
+        {{cell.value}}
     </div>
     <!--Message -->
     <div class="message-container">

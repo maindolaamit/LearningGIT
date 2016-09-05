@@ -3,6 +3,7 @@ $color-border: brown;
 $color-text: black;
 
 $padding: 10px;
+$cell-height: 50px;
 
 * {
   box-sizing: border-box;
@@ -27,7 +28,7 @@ $padding: 10px;
     border: 1px solid transparent;
     background-color: $color-bg;
   }
-  .player.selected{
+  .player.selected {
     border: 1px solid $color-border;
   }
 }
@@ -38,6 +39,7 @@ $padding: 10px;
   .cell {
     float: left;
     width: 33.33%;
+    height: $cell-height;
     text-align: center;
     padding: $padding*1.5;
     border: 1px solid $color-border;
