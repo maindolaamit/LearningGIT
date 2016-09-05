@@ -1,0 +1,31 @@
+$color-blue: blue;
+$color-red: red;
+$color-green: green;
+
+* {
+  box-sizing: border-box;
+}
+
+//Player container
+.player-container {
+  .player {
+    float: left;
+    width: 50%;
+    border: 1px solid $color-red;
+    background-color: $color-red;
+  }
+  .player:hover {
+    background-color: $color-blue;
+  }
+}
+
+//Game Board container
+.board-container {
+  .cell {
+    float: left;
+    width: 33%;
+    border: 5px solid $color-red;
+    background-color: $color-green;
+  }
+}
+

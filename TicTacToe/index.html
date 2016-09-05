@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <div class="game-container">
     <!--Player -->
     <div class="player-container">
-        <div class="player-one"></div>
-        <div class="player-two"></div>
+        <div class="player-one player">Player 1</div>
+        <div class="player-two player">Player 2</div>
     </div>
+
     <!--Game board-->
     <div class="board-container">
         <!--first row-->
-        <div class="cell-11"></div>
-        <div class="cell-12"></div>
-        <div class="cell-13"></div>
+        <div class="cell-11 cell">X</div>
+        <div class="cell-12 cell ">O</div>
+        <div class="cell-13 cell">X</div>
         <!--second row-->
-        <div class="cell-21"></div>
-        <div class="cell-22"></div>
-        <div class="cell-23"></div>
+        <div class="cell-21 cell">0</div>
+        <div class="cell-22 cell">X</div>
+        <div class="cell-23 cell">0</div>
         <!--third row-->
-        <div class="cell-31"></div>
-        <div class="cell-32"></div>
-        <div class="cell-33"></div>
+        <div class="cell-31 cell">0</div>
+        <div class="cell-32 cell">X</div>
+        <div class="cell-33 cell">0</div>
     </div>
     <!--Message -->
     <div class="message-container">
-        <div class="message"></div>
+        <div class="message">Player 1 Wins !!!</div>
     </div>
 </div>
 </body>
