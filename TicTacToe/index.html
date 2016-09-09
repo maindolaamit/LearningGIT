@@ -24,11 +24,10 @@
              ng-click="!cell.value ? game.board.select(cell) : ''">
             {{cell.value ? cell.value : "" }}
         </div>
-        {{cell.value}}
     </div>
     <!--Message -->
     <div class="message-container">
-        <div class="message">{{result.message}}</div>
+        <div class="message">{{game.mode.gameResult}}</div>
     </div>
 </div>
 </body>
